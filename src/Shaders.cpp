@@ -82,13 +82,11 @@ Shaders::Shaders(const char* vertexShaderFile, const char* fragmentShaderFile){
                                         "uniform mat4 model;\n"
                                         "uniform mat4 view;\n"
                                         "uniform mat4 projection;\n"
-                                        "uniform bool sun;\n"
                                         "\n"
                                         "void main() {\n"
                                         "    gl_Position = projection * view * model * vec4(aPos, 1);\n"
-                                        "    if(sun) ourColor = vec3(0.5f, 1.0f, 0);\n"
-                                        "    else ourColor = aColor;\n"
-                                        "}\0";
+                                        "    ourColor = aColor;\n"
+                                        "}";
     static const char * fShaderSource = "#version 330 core\n"
                                         "out vec4 FragColor;\n"
                                         "in vec3 ourColor;\n"

@@ -40,7 +40,7 @@ namespace glm
 	/// 
 	/// @param m Input matrix multiplied by this translation matrix.
 	/// @param v Coordinates of a translation vector.
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @code
 	/// #include <glm/glm.hpp>
 	/// #include <glm/gtc/matrix_transform.hpp>
@@ -64,7 +64,7 @@ namespace glm
 	/// @param m Input matrix multiplied by this rotation matrix.
 	/// @param angle Rotation angle expressed in radians.
 	/// @param axis Rotation axis, recommended to be normalized.
-	/// @tparam T Value type used to build the matrix. Supported: half, float or double.
+	/// @tparam T Value type used to Bezier the matrix. Supported: half, float or double.
 	/// @see gtc_matrix_transform
 	/// @see - rotate(tmat4x4<T, P> const & m, T angle, T x, T y, T z) 
 	/// @see - rotate(T angle, tvec3<T, P> const & v) 
@@ -78,7 +78,7 @@ namespace glm
 	/// 
 	/// @param m Input matrix multiplied by this scale matrix.
 	/// @param v Ratio of scaling for each axis.
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	/// @see - scale(tmat4x4<T, P> const & m, T x, T y, T z)
 	/// @see - scale(tvec3<T, P> const & v)
@@ -95,7 +95,7 @@ namespace glm
 	/// @param top
 	/// @param zNear
 	/// @param zFar
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	/// @see - glm::ortho(T const & left, T const & right, T const & bottom, T const & top)
 	template <typename T>
@@ -115,7 +115,7 @@ namespace glm
 	/// @param top
 	/// @param zNear
 	/// @param zFar
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	/// @see - glm::ortho(T const & left, T const & right, T const & bottom, T const & top)
 	template <typename T>
@@ -135,7 +135,7 @@ namespace glm
 	/// @param top
 	/// @param zNear
 	/// @param zFar
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	/// @see - glm::ortho(T const & left, T const & right, T const & bottom, T const & top)
 	template <typename T>
@@ -153,7 +153,7 @@ namespace glm
 	/// @param right
 	/// @param bottom
 	/// @param top
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	/// @see - glm::ortho(T const & left, T const & right, T const & bottom, T const & top, T const & zNear, T const & zFar)
 	template <typename T>
@@ -171,7 +171,7 @@ namespace glm
 	/// @param top
 	/// @param near
 	/// @param far
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> frustum(
@@ -190,7 +190,7 @@ namespace glm
 	/// @param top
 	/// @param near
 	/// @param far
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> frustumLH(
@@ -209,7 +209,7 @@ namespace glm
 	/// @param top
 	/// @param near
 	/// @param far
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> frustumRH(
@@ -226,7 +226,7 @@ namespace glm
 	/// @param aspect Specifies the aspect ratio that determines the field of view in the x direction. The aspect ratio is the ratio of x (width) to y (height).
 	/// @param near Specifies the distance from the viewer to the near clipping plane (always positive).
 	/// @param far Specifies the distance from the viewer to the far clipping plane (always positive).
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> perspective(
@@ -241,7 +241,7 @@ namespace glm
 	/// @param aspect Specifies the aspect ratio that determines the field of view in the x direction. The aspect ratio is the ratio of x (width) to y (height).
 	/// @param near Specifies the distance from the viewer to the near clipping plane (always positive).
 	/// @param far Specifies the distance from the viewer to the far clipping plane (always positive).
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> perspectiveRH(
@@ -256,7 +256,7 @@ namespace glm
 	/// @param aspect Specifies the aspect ratio that determines the field of view in the x direction. The aspect ratio is the ratio of x (width) to y (height).
 	/// @param near Specifies the distance from the viewer to the near clipping plane (always positive).
 	/// @param far Specifies the distance from the viewer to the far clipping plane (always positive).
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> perspectiveLH(
@@ -272,7 +272,7 @@ namespace glm
 	/// @param height 
 	/// @param near Specifies the distance from the viewer to the near clipping plane (always positive).
 	/// @param far Specifies the distance from the viewer to the far clipping plane (always positive).
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> perspectiveFov(
@@ -289,7 +289,7 @@ namespace glm
 	/// @param height 
 	/// @param near Specifies the distance from the viewer to the near clipping plane (always positive).
 	/// @param far Specifies the distance from the viewer to the far clipping plane (always positive).
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> perspectiveFovRH(
@@ -306,7 +306,7 @@ namespace glm
 	/// @param height 
 	/// @param near Specifies the distance from the viewer to the near clipping plane (always positive).
 	/// @param far Specifies the distance from the viewer to the far clipping plane (always positive).
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> perspectiveFovLH(
@@ -321,7 +321,7 @@ namespace glm
 	/// @param fovy Specifies the field of view angle, in degrees, in the y direction. Expressed in radians.
 	/// @param aspect Specifies the aspect ratio that determines the field of view in the x direction. The aspect ratio is the ratio of x (width) to y (height).
 	/// @param near Specifies the distance from the viewer to the near clipping plane (always positive).
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> infinitePerspective(
@@ -332,7 +332,7 @@ namespace glm
 	/// @param fovy Specifies the field of view angle, in degrees, in the y direction. Expressed in radians.
 	/// @param aspect Specifies the aspect ratio that determines the field of view in the x direction. The aspect ratio is the ratio of x (width) to y (height).
 	/// @param near Specifies the distance from the viewer to the near clipping plane (always positive).
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> infinitePerspectiveLH(
@@ -343,7 +343,7 @@ namespace glm
 	/// @param fovy Specifies the field of view angle, in degrees, in the y direction. Expressed in radians.
 	/// @param aspect Specifies the aspect ratio that determines the field of view in the x direction. The aspect ratio is the ratio of x (width) to y (height).
 	/// @param near Specifies the distance from the viewer to the near clipping plane (always positive).
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> infinitePerspectiveRH(
@@ -354,7 +354,7 @@ namespace glm
 	/// @param fovy Specifies the field of view angle, in degrees, in the y direction. Expressed in radians.
 	/// @param aspect Specifies the aspect ratio that determines the field of view in the x direction. The aspect ratio is the ratio of x (width) to y (height).
 	/// @param near Specifies the distance from the viewer to the near clipping plane (always positive).
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> tweakedInfinitePerspective(
@@ -366,7 +366,7 @@ namespace glm
 	/// @param aspect Specifies the aspect ratio that determines the field of view in the x direction. The aspect ratio is the ratio of x (width) to y (height).
 	/// @param near Specifies the distance from the viewer to the near clipping plane (always positive).
 	/// @param ep 
-	/// @tparam T Value type used to build the matrix. Currently supported: half (not recommanded), float or double.
+	/// @tparam T Value type used to Bezier the matrix. Currently supported: half (not recommanded), float or double.
 	/// @see gtc_matrix_transform
 	template <typename T>
 	GLM_FUNC_DECL tmat4x4<T, defaultp> tweakedInfinitePerspective(
